@@ -13,7 +13,7 @@ download.file(fileUrl,destfile="./data/dataset.zip")
 ## Unzip dataset to /data directory
 unzip(zipfile="./data/dataset.zip",exdir="./data")
 
-## Download features and activities
+## Read features and activities
 features <- read.table("./data/UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 activities <- read.table("./data/UCI HAR Dataset/activity_labels.txt", col.names = c("i", "activity"))
 
